@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 10</title>
+</head>
+<body>
+    <h3> Q2: What will be the result for these expressions?
+    </h3>
+    <pre>
+        <ul>
+            <li>5 > 4 // true</li>
+            <li>"apple" > "pineapple" //false</li>
+            <li>"2" > "12" //true</li>
+            <li>undefined == null // true</li>
+            <li>undefined === null //false</li>
+            <li>null == "\n0\n" // false</li>
+            <li>null === +"\n0\n" //false</li>
+        </ul>
+    </pre>
+
+    <!-- ================== -->
+
+    <h3>Q 3: What are the final values of all variables a, b, c and d after the code below?
+    </h3>
+    <pre>
+        <ul>
+            <li>let a = 1, b = 1 </li>
+            <li>let c = ++a; // c = 2 , a = 2 (prefix)</li>
+            <li>let d = b++; // d = 1 , b = 2 (postfix)</li>
+        </ul>
+    </pre>
+    <!-- ======================== -->
+
+    <h3>Q 4: What are the values of a and x after the code below?
+    </h3>
+    <pre>
+        <ul>
+            <li>let a = 2;</li>
+            <li>let x = 1 + (a *= 2);  </li>
+            <li>a = (a *= 2) = (2 * 2) = 4 </li>
+            <li>x = 1 + 4 = 5</li>
+        </ul>
+    </pre>
+
+    <!-- ========================= -->
+
+    <h3> Q5: Here’s a code that asks the user for two numbers and shows their sum.
+        It works incorrectly. The output in the example below is 12 (for default prompt values).
+        Why? Fix it. The result should be 3.
+        </h3>
+
+        <pre>
+            let a = prompt("First number?", 1);
+            let b = prompt("Second number?", 2);
+
+            alert(a + b); // 12
+            
+        </pre>
+        <h5>Correct way. prompt always return string so we use Number() method</h5>
+        <pre>
+            let a = Number(prompt("First number?")); 
+            let b = Number(prompt("Second number?"));
+
+            alert(a + b); // 3
+
+        </pre>
+
+        <!-- ====================== -->
+
+        <h3>Q 6:  Rewrite this if using the conditional operator '?':
+            let result;
+        </h3>
+        <pre>
+            if (a + b < 4) {
+                result = 'Below';
+              } else {
+                result = 'Over';
+              }
+         
+        ##  Write in ternary operator
+          
+          
+            (a + b < 4) ? 'Below' : 'Over' ;
+
+        </pre>
+
+        <!-- ========================== -->
+
+        <h3>Q 7: Rewrite 'if..else' into '?'
+            Rewrite if..else using multiple ternary operators '?'.
+            For readability, it’s recommended to split the code into multiple lines.
+            let message;
+        </h3>
+
+        <pre>
+            if (login == 'Employee') {
+                message = 'Hello';
+              } else if (login == 'Director') {
+                message = 'Greetings';
+              } else if (login == '') {
+                message = 'No login';
+              } else {
+                message = '';
+              }
+
+            ##  Write in ternary operators
+
+            let message = (login == 'Employee') ? 'Hello' :
+            (login == 'Director') ? 'Greetings' :
+            (login == '') ? 'No login' :
+            '';
+
+        </pre>
+
+        <!-- ========================== -->
+
+        <h3>Q 8: What is the code below going to output?
+            </h3>
+            <pre>
+                alert( null || 2 || undefined );
+
+                Answer is 2 . because null is false value and 2 is first true value so it show 2 in alert window. || stop where first true value is find(check the page)
+
+            </pre>
+
+        <!-- ========================== -->
+
+        <h3>
+            Q 9: What will the code below output?
+
+        </h3>
+            <pre>
+                alert( alert(1) || 2 || alert(3) ); 
+
+                Answer is : first 1 and Second 2 and third alert(3) not show in alert because 
+                1: alert can not return any value.
+                2: alert(1) show "1" in alert window, but its value is undefined.
+                3: 2 is a first true value in this expression. after execution 2 in alert window. expression was ended.
+                4: || stop where first true value is find
+            
+            </pre>
+
+            <!-- ======================== -->
+        <h3>Q 10: What is this code going to show?
+        </h3>
+        <pre>
+            alert( 1 && null && 2 );  // null
+        
+            Answer is : && find first false value so null show in alert window
+        </pre>
+
+            <!-- ======================== -->
+
+        <h3>Q 11: What will this code show?
+
+        </h3>
+        <pre>
+            alert( alert(1) && alert(2) );
+
+            Answer is first 1 and then undefined because
+
+            1: first run alert(1). alert does not return anything so this expression become undefined it look like
+            
+            alert(undefined && alert(2));
+            
+            2: undefined is false value and && expression end at execution of undefined. 
+
+            3: alert(2) will never execute
+        </pre>
+
+        <!-- ====================== -->
+
+        <h3>
+            Q 12: What will the result be?
+
+        </h3>
+        <pre>
+            alert( null || 2 && 3 || 4 );
+
+            Answer is 3:
+
+            1: If the left hand side of && evaluates as a false value, the whole expression evaluates as the left hand side.
+            2: Otherwise it evaluates as the right hand side because The priorty of && is higher than ||, so it executes first. So expression is 
+
+            alert ( null || 3 || 4);
+        </pre>
+
+        <!-- ========================== -->
+
+        <h3>
+            Q 13: Write an if condition to check that age is NOT between 14 and 90 inclusively.
+
+            Create two variants: the first one using NOT !, the second one – without it.            
+        </h3>
+        <pre>
+            Answer is :
+
+            if (!(age >= 14 && age <= 90))
+
+            if (age < 14 || age > 90)
+        </pre>
+
+        <!-- =========================== -->
+
+        <h3>
+            Q 14: Which of these alerts are going to execute?
+
+            What will the results of the expressions be inside if(...)?
+        </h3>
+            <pre>
+                if (-1 || 0) alert( 'first' ); 
+                // true condition because -1 is true 
+                
+                
+                if (-1 && 0) alert( 'second' ); 
+                // false condition because (ture && false). not execute alert
+                
+                if (null || -1 && 1) alert( 'third' );
+                // true condition. because Operator && has a higher priority than ||, so the 
+                -1 && 1 >> 1 
+
+                if (null || 1) alert('third'); run alert
+            </pre>
+
+            <!-- ====================== -->
+
+            <h3>
+                Q 15: Write the code using if..else which would correspond to the following switch:
+            </h3>
+            <pre>
+                switch (browser) {
+                    case 'Edge':
+                      alert( "You've got the Edge!" );
+                      break;
+                  
+                    case 'Chrome':
+                    case 'Firefox':
+                    case 'Safari':
+                    case 'Opera':
+                      alert( 'Okay we support these browsers too' );
+                      break;
+                  
+                    default:
+                      alert( 'We hope that this page looks ok!' );
+                  }
+
+
+                Answer is:
+
+                if (browser === 'Edge'){
+                    alert( "You've got the Edge!" );
+                }else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera' ){
+                    alert( 'Okay we support these browsers too' );
+                }else {
+                    alert( 'We hope that this page looks ok!' );
+                }
+            </pre>
+            
+            <!-- ====================== -->
+
+            <h3>
+                Q 16: Rewrite the code below using a single switch statement:
+            </h3>
+            <pre>
+                let a = +prompt('a?', '');
+
+                if (a == 0) {
+                alert( 0 );
+                }
+                if (a == 1) {
+                alert( 1 );
+                }
+
+                if (a == 2 || a == 3) {
+                alert( '2,3' );
+                }
+
+                Answer is :
+
+                let a = +prompt('a?', '');
+
+                switch (a) {
+                case 0:
+                    alert( 0 );
+                    break;
+                case 1:
+                    alert( 1 );
+                    break;
+                case 2:
+                case 3:
+                    alert( '2,3' );
+                    break;
+                }
+
+            </pre>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
