@@ -1,0 +1,89 @@
+#navbar li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+#navbar a {
+  color: #0f2b4a;
+}
+.blue {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+.white {
+  background-color: transparent;
+  color: blue;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+/* hero section Start */
+#heroSection h2 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+/* hero section Start */
+
+/* Services Section Start  */
+#services h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.icon {
+  width: 372;
+  height: 372;
+  text-align: center;
+}
+
+/* Services Section End  */
+
+/* feature section start  */
+
+#features h3 {
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+/* feature section end  */
+
+/* Property Box Start  */
+.probox {
+  width: 546px;
+  height: 244px;
+}
+/* Property Box End  */
+#slide-pro h4 {
+  font-size: 1.7rem;
+}
+
+.dark-blue {
+  background-color: #0f2a47;
+  color: white;
+  height: 360px;
+}
+.dark-blue h4 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.d-blue {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #b6bec8;
+}
+
+.search {
+  width: 366px;
+  height: 56px;
+}
+
+/* footer section  */
+
+#footer p {
+  font-size: 1rem;
+  color: lightgrey;
+  text-align: right;
+}
