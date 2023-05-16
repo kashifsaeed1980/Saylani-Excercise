@@ -2,4 +2,6 @@ To access HTML elements using the Document Object Model (DOM) in JavaScript, you
 
 getElementById(): This method allows you to select an element based on its unique ID attribute.  
 
-`const element = document.getElementById('elementId');`
+```
+const element = document.getElementById('elementId');
+```
