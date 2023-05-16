@@ -3,10 +3,10 @@
 
 ### In this article, we will explore how to access HTML elements using the DOM in JavaScript. Let's get started!
 
-##Prerequisites
+## Prerequisites
 Before we dive into accessing HTML elements using the DOM, make sure you have a basic understanding of HTML, CSS, and JavaScript.
 
-##Understanding the DOM
+## Understanding the DOM
 ### The DOM represents an HTML document as a hierarchical structure of objects. Each HTML element is represented by an object in the DOM tree, and we can interact with these objects using JavaScript.
 
 ## Accessing HTML Elements
@@ -20,7 +20,7 @@ const element = document.getElementById('elementId');
 
 ```
 
-##Accessing Elements by Tag Name
+## Accessing Elements by Tag Name
 
 ### We can access elements by their tag name using the getElementsByTagName() method. This method takes the tag name as a parameter and returns a collection of elements with the specified tag.
 
@@ -45,10 +45,10 @@ const elements = document.querySelectorAll('cssSelector');
 
 ```
 
-##Modifying Element Properties
+## Modifying Element Properties
 ### Once we have accessed an HTML element, we can modify its properties, such as its content, styles, or attributes.
 
-##Modifying Element Content
+## Modifying Element Content
 ### To modify the content of an element, we can use the **innerHTML** property. This property allows us to set or get the HTML content inside an element.
 
 ```
