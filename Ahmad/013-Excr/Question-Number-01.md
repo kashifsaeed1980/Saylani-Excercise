@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 
 ## Step 4: Accessing elements by ID
-To access an element by its ID, we can use the *'getElementById'* method. Inside the *'DOMContentLoaded'* event listener, add the following code to access the button and paragraph elements we defined earlier:
+To access an element by its ID, we can use the **'getElementById'** method. Inside the **'DOMContentLoaded'** event listener, add the following code to access the button and paragraph elements we defined earlier:
 
 ```
 
@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ```
 
-Now you can use the *'myButton'* and *'myParagraph'* variables to manipulate these elements using JavaScript.
+Now you can use the **'myButton'** and **'myParagraph'** variables to manipulate these elements using JavaScript.
 
 ## Step 5: Manipulating element properties
-Once you have access to an element, you can modify its properties. For example, let's change the text of the paragraph element when the button is clicked. Add the following code inside the *'DOMContentLoaded'* event listener:
+Once you have access to an element, you can modify its properties. For example, let's change the text of the paragraph element when the button is clicked. Add the following code inside the **'DOMContentLoaded'** event listener:
 
 ```
 
