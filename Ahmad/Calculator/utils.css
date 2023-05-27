@@ -1,0 +1,31 @@
+.text-center{
+    text-align: center;
+  }
+  
+  .bg-red{
+    background: red;
+  }
+  
+  .mx-auto{
+    margin: auto;
+  }
+  
+  .flex{
+    display:flex;
+  } 
+  .flex-col{
+    flex-direction: column;
+  }
+  
+  .items-center{
+    align-items: center;
+  }
+
+  .bg-red {
+    background-color: red;
+    min-width: 220px;
+  }
+
+  .btn-width {
+    min-width: 140px;
+  }
